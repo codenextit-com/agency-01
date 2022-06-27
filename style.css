@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;0,800;0,900;1,500;1,700&display=swap');
+:root{
+    --main-color: #ff7700;
+}
+body{
+    font-family: "Poppins", sans-serif ;
+    line-height: 1.8;
+}
+.text-main-color{
+    color: var(--main-color) !important;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700 !important;
+}
+P{
+    text-align: justify;
+}
+a {
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 600;
+}
+ul{
+    list-style: none;
+   
+}
+
+img{
+    width: 100%;
+}
+
+section{
+    padding: 80px 0;
+    z-index: 2;
+    position: relative;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:rgba(119, 109, 57, 0.5);
+    z-index: -1;
+}
+/* -----navBar------ */
+.navbar{
+    background: #0d113d;
+}
+.navbar .navbar-brand{
+    color: var(--main-color);
+    font-size: 35px;
+    text-shadow: 4px 2px 4px #000001,
+    6px 4px 6px #000001;
+    
+}
+.navbar-nav .nav-item .nav-link{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+.navbar-nav .nav-item:hover .nav-link{
+    color: var(--main-color);
+}
+.navbar-nav .nav-item .nav-link.active{
+    color: var(--main-color);
+    font-weight: 500;
+}
+/* *******BAnner******** */
+
+.bg-cover{
+    background: url(./img/anastasia-nelen-Ki_pIEtS6pk-unsplash.jpg); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home h1 span{
+    color: var(--main-color);
+}
+.btn{
+    padding: 10px 28px;
+    transition: all 0.3s ease;
+
+}
+.btn-main{
+    border: none;
+    font-weight: 600;
+    color: white;
+    border: 2px solid #fff;
+}
+.btn-main:hover{
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: white;
+}
+.btn-main-2{
+    border: none;
+    font-weight: 600;
+    color: var(--main-color);
+    border: 2px solid var(--main-color);
+}
+.btn-main-2:hover{
+    background: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: white;
+}
+/* WelCome Section  */
+
+.creative_box{
+    width: 100%;
+}
+.divider1{
+    width: 6px;
+    height: 100px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+.creative_img{
+    max-width: 80%;
+    position: relative;
+}
+.creative_img .overlay_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;background:rgba(119, 109, 57, 0.374);
+}
+.creative_img img{
+    width: 100%;
+}
+
+.divider2{
+    width: 100%;
+    height: 6px;
+    background: #e0e0e0;
+}
+
+
+.fIcon img{
+    width: 80px;
+    height: 80px;
+}
+
+/* -------Slogan------- */
+
+#slogan{
+    background: url(./img/slogan-img.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* ---------Services------- */
+
+.ser-box{
+    width: 100%;
+    height: 380px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.ser-box img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.box-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    background:rgba(119, 109, 57, 0.374);
+    background: linear-gradient(to top , rgba(119, 109, 57, 0.8) 40%, rgba(119, 109, 57, 0.03))30% ;
+}
+.ser-box p{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+}
+.all-service{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: #6a5a00;
+}
+.all-service p{
+    position: absolute;
+    bottom: 15%;
+    right: 15%;
+}
+.all-service .divider4{
+    position: absolute;
+    bottom: 18%;
+    right: 31%;
+    width: 100px;
+    height: 6px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+/* ****Support**** */
+
+
+
+.support_info{
+    padding: 0 10px;
+}
+.woman_img{
+    position: relative;
+    height: 420px;
+    width: 100%;
+}
+.woman_img img{
+    position: absolute;
+    max-width: 40%;
+    bottom: 0;
+    right: 20%;
+}
+.support_info ul , .support_info Li{
+    padding: 0;
+    list-style:circle;
+    font-size: 20px;
+}
+
+/* -----protfolio------ */
+
+.portfolio_img{
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.portfolio_img img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+/* -----------Footer--------- */
+
+footer{
+    background: #0d113d;
+}
+
+.footer-logo a{
+    font-size: 50px;
+    color: var(--main-color) ;
+    text-shadow: 4px 2px 4px #fff;
+
+}
+
+.useful-link ul li a{
+    color: #fff;
+    line-height: 33px;
+    
+}
+
+.notice{
+    color: #fff;
+}
+
+
+/* ********aboutPage********* */
+.aboutBanner{
+    width: 100%;
+    height: 400px;
+    background: linear-gradient( rgba(119, 109, 57, 0.3) , rgba(119, 109, 57, 0.8) ) , url(./img/aboutPageBanner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+}
+
+.breadcrumb .breadcrumb-item a{
+    color: #ffff !important;
+}
+.breadcrumb .breadcrumb-item .active{
+    color: var(--main-color) !important;
+}
+
+.divider5{
+    right: 31%;
+    width: 100px;
+    height: 6px;
+    border-radius: 5px;
+    background: var(--main-color);
+}
+
+/* ********Menu******* */
+.accordion-body ul li a{
+    color: #000;
+}
+.accordion-body ul li a:hover{
+    color: var(--main-color);
+}
+
+
+
+
+/* *********Contact Page******** */
+
+.con_info{
+    color: #0d113d;
+}
+
+.infoIcon{
+    margin: auto;
+    max-width: 50%;
+}
+.infoIcon i{
+    padding: 0 1.5rem;
+    font-size: 7rem;
+    color: #999999;
+}
+
+.contact_form form input::placeholder,
+.contact_form form textarea::placeholder{
+    color: #ff7700;
+}
+
+/* ***********AboutPage*********** */
+
+.divider5{
+    width: 150px;
+    height: 8px;
+    background: var(--main-color);
+    border-radius: 5px;
+}
+
+.about_box1{
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+    background: #0d113d;
+}
+
+.about_box2{
+    border-radius: 5px;
+    width: 100%;
+    height: 400px;
+    background: var(--main-color);
+    color: #fff;
+}
+
+.about_box2 i{
+    font-size: 14rem;
+}
+
+
+/* .......AboutSlogan...... */
+
+
+#aboutSlogan{
+    background:  linear-gradient( rgba(119, 109, 57, 0.3) , rgba(119, 109, 57, 0.8) ) , url(./img/aboutSlogan.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+
